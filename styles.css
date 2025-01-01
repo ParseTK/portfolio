@@ -27,15 +27,13 @@ body, html {
 
     /* Set single-column layout for main content on mobile devices */
     main.grid-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center; /* Center align the content */
+        display: block; /* Ensure it acts as a block-level container */
         width: 100%; /* Ensure full width */
     }
 
     section {
-        margin-bottom: 20px;
         width: 100%; /* Ensure sections take up full width */
+        margin-bottom: 20px;
     }
 
     /* Adjust layout and padding for skills, projects, and bio sections on mobile devices */
@@ -57,13 +55,14 @@ body, html {
     /* Ensure the Skills section doesn't require horizontal scrolling */
     .skills-container {
         display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+        flex-direction: column; /* Stack skills vertically */
+        align-items: center; /* Center align the skills */
         overflow-x: hidden;
         padding-bottom: 20px;
         gap: 20px;
     }
 }
+
 
 
 
