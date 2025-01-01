@@ -25,45 +25,62 @@ body, html {
         align-items: center;
     }
 
-    /* Set single-column layout for main content on mobile devices */
+    /* Simplified single-column layout for main content on mobile devices */
     main.grid-container {
-        display: flex; /* Use flexbox */
-        flex-direction: column; /* Stack items vertically */
-        align-items: stretch; /* Stretch items to fit container */
-        width: 100%; /* Ensure full width */
-        padding: 0 10px; /* Add padding for better spacing */
-        box-sizing: border-box; /* Include padding in width */
+        display: block;
+        width: 100%;
+        padding: 0;
+        box-sizing: border-box;
     }
 
     section {
-        width: 100%; /* Ensure sections take up full width */
-        margin-bottom: 20px; /* Space between sections */
-        box-sizing: border-box; /* Include padding and border in element's total width and height */
+        width: 100%;
+        margin-bottom: 20px;
+        box-sizing: border-box;
         padding: 20px;
-        background: rgba(243, 244, 246, 0.8); /* Light gray with transparency */
-        border: 1px solid #1F2937; /* Border for better distinction */
-        border-radius: 10px; /* Rounded corners */
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+        background: rgba(243, 244, 246, 0.8);
+        border: 1px solid #1F2937;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
 
     /* Ensure the About Me section looks right */
     #about-me {
-        text-align: center; /* Center the content */
+        padding: 20px;
+        text-align: center;
+        background: rgba(229, 231, 235, 0.8);
+        border: 1px solid #1F2937;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
 
-    /* Ensure the Skills section doesn't require horizontal scrolling */
+    /* Ensure the Skills section looks right */
+    #skills {
+        padding: 20px;
+        background: rgba(243, 244, 246, 0.8);
+        border: 1px solid #1F2937;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
     .skills-container {
-        display: block; /* Ensure it acts as a block-level container */
-        width: 100%; /* Ensure full width */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 20px;
     }
 
     .skill {
-        display: block; /* Ensure each skill item is block level */
-        width: 100%; /* Make sure each skill item takes full width */
-        text-align: center; /* Center align skill items */
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+        background: rgba(255, 255, 255, 0.8);
+        border: 1px solid #1F2937;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
 }
-
 
 
 /* Responsive images and videos to fit within their containers */
