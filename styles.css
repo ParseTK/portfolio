@@ -27,9 +27,11 @@ body, html {
     }
 
     main.grid-container {
-        display: block;
+        display: flex;
+        flex-direction: column; /* Ensure sections stack vertically */
+        align-items: stretch; /* Stretch sections to full width */
         width: 100%;
-        padding: 0;
+        padding: 0 10px;
         box-sizing: border-box;
     }
 
