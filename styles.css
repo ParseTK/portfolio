@@ -8,12 +8,20 @@ body, html {
 
 /* Media queries for responsive design */
 @media (max-width: 599px) {
+    html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Adjust navigation layout for mobile devices */
     nav ul {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
+    /* Set single-column layout for main content on mobile devices */
     main.grid-container {
         grid-template-columns: 1fr;
     }
@@ -22,12 +30,28 @@ body, html {
         margin-bottom: 20px;
     }
 
+    /* Adjust layout and padding for skills, projects, and bio sections on mobile devices */
     .skills-container, .project, .bio {
+        display: grid; /* Ensure it uses grid layout */
         grid-template-columns: 1fr;
         margin: 10px auto;
         padding: 15px;
     }
+
+    /* Ensure the About Me section looks right */
+    .about-me-section {
+        padding: 20px;
+        text-align: center;  /* Center the content */
+    }
+
+    /* Ensure the Skills section doesn't require horizontal scrolling */
+    .skills-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;  /* Center the skills */
+    }
 }
+
 
 /* Responsive images and videos */
 img, video {
