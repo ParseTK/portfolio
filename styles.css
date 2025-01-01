@@ -22,11 +22,18 @@ body, html {
 
     /* Ensure sections stack vertically on mobile */
     main.grid-container {
-        display: block; /* Block layout for main container */
-        width: 100%;
-        padding: 0;
-        box-sizing: border-box;
-    }
+   background: rgba(243, 244, 246, 1); /* Fully opaque */
+    border: 1px solid #1F2937;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px auto; /* Center horizontally */
+    transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
+    max-width: 80%; /* Limit width to prevent overflow */
+    box-sizing: border-box; /* Ensures padding is included in width */
+    overflow: hidden; /* Prevents content from spilling out */
+    position: relative; /* Ensures it stays within the layout */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow to project cards */
+    color: #1F2937;
 
     section {
         width: 100%; /* Ensure sections take up full width */
