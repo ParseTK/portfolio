@@ -45,6 +45,7 @@ body, html {
     #about-me {
         padding: 20px;
         text-align: center;  /* Center the content */
+        margin-bottom: 20px;
         background: rgba(229, 231, 235, 0.8); /* Background color for better visibility */
         border: 1px solid #1F2937; /* Border for better distinction */
         border-radius: 10px; /* Rounded corners */
@@ -67,6 +68,7 @@ body, html {
         flex-direction: column; /* Stack skills vertically */
         align-items: center; /* Center align the skills */
         overflow-x: hidden;
+        padding-bottom: 20px;
         gap: 20px; /* Space between items */
     }
 }
