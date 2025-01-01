@@ -1,0 +1,425 @@
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden; /* Prevent scrolling */
+}
+
+/* Video Background Styles */
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+#bg-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+}
+
+/* Content Overlay Styles */
+.content-overlay {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Allow scrolling */
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    color: #F3F4F6;
+}
+
+/* Header and Navigation Styles */
+header {
+    background: rgba(243, 244, 246, 0.8); /* Light gray with transparency */
+    color: #2563EB;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow to header */
+}
+
+/* Navigation Styles */
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline; /* Display items inline to form a row */
+    margin: 0 15px;
+}
+
+nav a {
+    display: inline-block;
+    width: 150px; /* Ensure all buttons have the same width */
+    color: #F3F4F6; /* Light text for contrast */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s, background-color 0.3s, padding 0.3s, box-shadow 0.3s, transform 0.1s, border 0.3s;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background: rgba(31, 41, 55, 0.8); /* Dark gray with transparency */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Consistent shadow */
+    border: 2px solid #4B5563; /* Border to match the site’s color scheme */
+    text-transform: uppercase; /* Add uppercase text */
+    letter-spacing: 1px; /* Add letter spacing */
+}
+
+nav a:hover {
+    text-decoration: none;
+    color: #F3F4F6; /* Light text for consistency */
+    background-color: #1F2937; /* Darker background on hover */
+    border: 2px solid white; /* Bright border on hover */
+    box-shadow: 0 0 10px black; /* Bright glow on hover */
+}
+
+nav a:active {
+    transform: translateY(4px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    background-color: grey; /* Highlight background on active */
+    color: #1F2937; /* Dark text on active state */
+}
+
+
+
+
+/* Main Content Styles */
+main.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Section Styles */
+section {
+    margin-bottom: 40px;
+    text-align: center;
+    animation: fadeInUp 1.5s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow to sections */
+    background: rgba(243, 244, 246, 0.8); /* Light gray with transparency */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* General h2 Styles */
+h2 {
+    font-family: 'Montserrat', sans-serif; /* Use the same modern font */
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #1F2937; /* Blue text */
+    text-shadow: none; /* Remove text shadow for readability */
+    padding-bottom: 10px;
+    border-bottom: 2px solid #1F2937;
+    animation: fadeInUp 1.5s ease-in-out; /* Retain existing fade-in effect */
+}
+
+/* Skills Section */
+#skills {
+    background: rgba(229, 231, 235, 0.8); /* Lighter gray with transparency */
+    border: 1px solid #1F2937;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 1200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    color: #1F2937;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+}
+
+#skills h2 {
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #1F2937;
+    text-shadow: none; /* Remove text shadow for readability */
+    padding-bottom: 10px;
+    border-bottom: 2px solid #1F2937;
+    margin-bottom: 20px;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding-bottom: 20px;
+}
+
+.skill {
+    background: rgba(243, 244, 246, 1); /* Fully opaque */
+    border: 1px solid #1F2937;
+    border-radius: 10px;
+    padding: 20px;
+    transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
+    text-align: left;
+}
+
+.skill:hover {
+    transform: scale(1.05);
+    background-color: rgba(229, 231, 235, 1); /* Fully opaque on hover */
+    box-shadow: 0 0 10px #1F2937; /* Teal glow */
+}
+
+.skill h3 {
+    margin-top: 0;
+    color: #1F2937; /* Teal highlight */
+    font-size: 1.5em;
+    text-shadow: none; /* Remove text shadow for readability */
+}
+
+.skill ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skill li {
+    margin: 10px 0;
+    color: #1F2937;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Project Effects */
+.project {
+    background: rgba(243, 244, 246, 1); /* Fully opaque */
+    border: 1px solid #1F2937;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px auto; /* Center horizontally */
+    transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
+    max-width: 80%; /* Limit width to prevent overflow */
+    box-sizing: border-box; /* Ensures padding is included in width */
+    overflow: hidden; /* Prevents content from spilling out */
+    position: relative; /* Ensures it stays within the layout */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow to project cards */
+    color: #1F2937;
+}
+
+.project:hover {
+    transform: scale(1.05);
+    background-color: rgba(229, 231, 235, 1); /* Fully opaque on hover */
+    box-shadow: 0 0 10px #1F2937; /* Amber glow */
+}
+.project:active {
+    transform: scale(1.05);
+    background-color: rgba(229, 231, 235, 1); /* Fully opaque on hover */
+    box-shadow: 0 0 10px #1F2937; /* Amber glow */
+    color: white;
+}
+.project h3 {
+    margin-top: 0;
+    color: #1F2937; /* Teal highlight */
+    text-shadow: none; /* Remove text shadow for readability */
+    animation: textGlow 2s infinite alternate;
+}
+
+/* Blog Section */
+#blog {
+    background: rgba(229, 231, 235, 0.8); /* Lighter gray with transparency */
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    max-height: 80vh;
+    overflow-y: auto;
+    padding-bottom: 20px; /* Ensure full visibility of content */
+}
+
+article {
+    background: rgba(243, 244, 246, 1); /* Fully opaque */
+    border: 1px solid #1F2937;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow to articles */
+}
+
+article:hover {
+    background-color: rgba(229, 231, 235, 1); /* Fully opaque on hover */
+    box-shadow: 0 0 10px #1F2937; /* Teal glow */
+}
+
+article h3 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #1F2937; /* Increased contrast */
+    text-shadow: none; /* Remove text shadow for readability */
+    animation: none; /* Remove glow animation for readability */
+}
+
+.read-more {
+    color: #2563EB;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+    color: #1E3A8A;
+}
+
+/* Contact Section */
+#contact {
+    max-height: 80vh;
+    overflow-y: auto;
+    padding-bottom: 20px; /* Ensure full visibility of content */
+}
+
+/* Footer Styles */
+footer {
+    background: rgba(243, 244, 246, 0.8); /* Light gray with transparency */
+    color: #1F2937;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    opacity: 0;
+}
+
+a {
+    color: #1F2937;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    text-decoration: underline;
+    text-decoration-color: #1F2937;
+    color: #1F2937;
+}
+a:active {
+    text-decoration: underline;
+    text-decoration-color: black;
+    color: white;
+}
+
+/* About Me Section Styles */
+#about-me {
+    background: rgba(229, 231, 235, 0.8); /* Lighter gray with transparency */
+    border: 1px solid #1F2937;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 900px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    color: #1F2937;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+}
+
+#about-me h2 {
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #1F2937;
+    text-shadow: none; /* Remove text shadow for readability */
+    padding-bottom: 10px;
+    border-bottom: 2px solid #1F2937;
+    margin-bottom: 20px;
+}
+
+.bio {
+    background: rgba(243, 244, 246, 1); /* Fully opaque */
+    border: 1px solid #1F2937;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: left;
+    color: #1F2937;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+}
+
+.bio p {
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+.bio h3 {
+    color: #1F2937;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes textGlow {
+    from {
+        text-shadow: none; /* Remove text shadow for readability */
+    }
+    to {
+        text-shadow: none; /* Remove text shadow for readability */
+    }
+}
+
+/* Typing Effect for Welcome Message */
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: #1F2937; }
+}
+
+/* Center the welcome message at the top */
+header {
+    background: rgba(243, 244, 246, 0.8); /* Light gray with transparency */
+    color: black;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow to header */
+}
+
+#welcome-message {
+    margin: 0;
+    font-size: 2.5em;
+    overflow: hidden;
+    border-right: .15em solid #1F2937;
+    white-space: nowrap;
+    letter-spacing: .15em;
+    animation:
+        typing 3.5s steps(40, end),
+        blink-caret .75s step-end infinite;
+    animation-fill-mode: forwards;
+    font-family: 'Montserrat', sans-serif; /* Updated font family */
+    display: inline-block; /* Ensure it's inline and centered */
+}
+
+#welcome-message.typing-done {
+    border-right: none; /* Remove caret after typing */
+}
