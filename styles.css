@@ -11,12 +11,13 @@ body, html {
 }
 
 /* Media queries for responsive design */
+/* Media queries for responsive design */
 @media (max-width: 599px) {
     html, body {
         height: 100%;
         margin: 0;
         padding: 0;
-        font-family: 'Montserrat', sans-serif;
+        font-family: 'Montserrat', sans-serif; /* Ensure consistent font */
     }
 
     nav ul {
@@ -26,8 +27,9 @@ body, html {
         padding: 0;
     }
 
+    /* Ensure sections stack vertically on mobile */
     main.grid-container {
-        display: block; /* Use block to ensure vertical stacking */
+        display: block; /* Block layout for main container */
         width: 100%;
         padding: 0;
         box-sizing: border-box;
@@ -35,7 +37,7 @@ body, html {
 
     section {
         width: 100%; /* Ensure sections take up full width */
-        margin-bottom: 20px;
+        margin-bottom: 20px; /* Space between sections */
         box-sizing: border-box;
         padding: 20px;
         background: #fff; /* White background for readability */
