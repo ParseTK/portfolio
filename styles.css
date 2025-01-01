@@ -1,3 +1,4 @@
+
 /* Reset default margins and paddings for body and html */
 body, html {
     margin: 0;
@@ -11,102 +12,7 @@ body, html {
 }
 
 /* Media queries for responsive design */
-/* Media queries for responsive design */
-@media (max-width: 599px) {
-    body, html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    overflow: hidden;
-    overflow-y: auto;
-    min-height: 100%;
-    display: flex;
-    flex-direction: row;
-}
-    nav ul {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 0;
-    }
 
-    /* Ensure sections stack vertically on mobile */
-    main.grid-container {
-   background: rgba(243, 244, 246, 1); /* Fully opaque */
-    border: 1px solid #1F2937;
-    border-radius: 5px;
-    padding: 10px;
-    margin: 10px auto; /* Center horizontally */
-    transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
-    max-width: 80%; /* Limit width to prevent overflow */
-    box-sizing: border-box; /* Ensures padding is included in width */
-    overflow: hidden; /* Prevents content from spilling out */
-    position: relative; /* Ensures it stays within the layout */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow to project cards */
-    color: #1F2937;
-
-    section {
-   background: rgba(243, 244, 246, 1); /* Fully opaque */
-    border: 1px solid #1F2937;
-    border-radius: 5px;
-    padding: 10px;
-    margin: 10px auto; /* Center horizontally */
-    transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
-    max-width: 80%; /* Limit width to prevent overflow */
-    box-sizing: border-box; /* Ensures padding is included in width */
-    overflow: hidden; /* Prevents content from spilling out */
-    position: relative; /* Ensures it stays within the layout */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow to project cards */
-    color: #1F2937;
-    }
-
-    #about-me {
-        background: #f9f9f9; /* Light gray background */
-        color: #333; /* Dark text for readability */
-        text-align: left; /* Left align the content */
-    }
-
-    .bio {
-        margin-bottom: 10px;
-        line-height: 1.6; /* Improved line height for readability */
-    }
-
-    .bio p {
-        margin-bottom: 10px;
-        text-align: left; /* Left align the text */
-    }
-
-    #skills {
-        background: #f9f9f9; /* Light gray background */
-        color: #333; /* Dark text for readability */
-        text-align: left; /* Left align the content */
-    }
-
-    .skills-container {
-        display: block; /* Ensure it acts as a block-level container */
-        width: 100%; /* Ensure full width */
-    }
-
-    .skill {
-        display: block; /* Ensure each skill item is block level */
-        width: 100%; /* Make sure each skill item takes full width */
-        text-align: left; /* Left align skill items */
-        margin-bottom: 10px;
-        padding: 15px;
-        background: #fff; /* White background for skills */
-        border: 1px solid #ddd; /* Soft border for separation */
-        border-radius: 10px; /* Rounded corners */
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
-    }
-
-    .skill h3 {
-        margin-top: 0;
-    }
-
-    .skill ul {
-        padding-left: 20px;
-    }
-}
 
 /* Responsive images and videos to fit within their containers */
 img, video {
@@ -547,4 +453,3 @@ header {
 #welcome-message.typing-done {
     border-right: none; /* Remove caret after typing */
 }
-
