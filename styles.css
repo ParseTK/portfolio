@@ -1,4 +1,4 @@
-/* Existing CSS */
+/* Reset default margins and paddings for body and html */
 body, html {
     margin: 0;
     padding: 0;
@@ -10,9 +10,14 @@ body, html {
     flex-direction: column;
 }
 
-
 /* Media queries for responsive design */
 @media (max-width: 599px) {
+    html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
     /* Adjust navigation layout for mobile devices */
     nav ul {
         display: flex;
@@ -49,14 +54,14 @@ body, html {
     .skills-container {
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;  /* Center the skills */
+        justify-content: center;
         overflow-x: hidden;
     }
 }
 
 
 
-/* Responsive images and videos */
+/* Responsive images and videos to fit within their containers */
 img, video {
     max-width: 100%;
     height: auto;
@@ -70,7 +75,7 @@ img, video {
     width: 100%;
     height: 100%;
     overflow: hidden;
-    z-index: -1;
+    z-index: -1; /* Ensure video background is behind other content */
 }
 
 #bg-video {
@@ -81,25 +86,25 @@ img, video {
     min-height: 100%;
     width: auto;
     height: auto;
-    z-index: -1;
-    transform: translate(-50%, -50%);
+    z-index: -1; /* Ensure video is behind other content */
+    transform: translate(-50%, -50%); /* Center the video */
 }
 
 /* Content Overlay Styles */
 .content-overlay {
     position: relative;
-    z-index: 1;
+    z-index: 1; /* Ensure content overlay is above the video background */
     width: 100%;
     height: 100%;
     overflow: auto; /* Allow scrolling */
     background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-    color: #F3F4F6;
+    color: #F3F4F6; /* Light text color */
 }
 
 /* Header and Navigation Styles */
 header {
     background: rgba(243, 244, 246, 0.8); /* Light gray with transparency */
-    color: #2563EB;
+    color: #2563EB; /* Primary text color */
     padding: 20px;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow to header */
@@ -142,34 +147,32 @@ nav a:hover {
 }
 
 nav a:active {
-    transform: translateY(4px);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    transform: translateY(4px); /* Move link down slightly on click */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Add shadow on active state */
     background-color: grey; /* Highlight background on active */
     color: #1F2937; /* Dark text on active state */
 }
 
-
-
-
 /* Main Content Styles */
 main.grid-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr; /* Two-column layout for main content */
     gap: 20px;
     padding: 20px;
-    animation: fadeIn 2s ease-in-out;
+    animation: fadeIn 2s ease-in-out; /* Fade-in animation */
 }
 
 /* Section Styles */
 section {
     margin-bottom: 40px;
     text-align: center;
-    animation: fadeInUp 1.5s ease-in-out;
+    animation: fadeInUp 1.5s ease-in-out; /* Fade-in-up animation */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow to sections */
     background: rgba(243, 244, 246, 0.8); /* Light gray with transparency */
     padding: 20px;
     border-radius: 10px;
 }
+
 
 /* General h2 Styles */
 h2 {
@@ -177,7 +180,7 @@ h2 {
     font-size: 2em;
     text-transform: uppercase;
     letter-spacing: 2px;
-    color: #1F2937; /* Blue text */
+    color: #1F2937; /* Primary text color */
     text-shadow: none; /* Remove text shadow for readability */
     padding-bottom: 10px;
     border-bottom: 2px solid #1F2937;
@@ -194,7 +197,7 @@ h2 {
     max-width: 1200px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
-    color: #1F2937;
+    color: #1F2937; /* Primary text color */
     font-family: 'Montserrat', sans-serif;
     line-height: 1.6;
 }
@@ -227,7 +230,7 @@ h2 {
 }
 
 .skill:hover {
-    transform: scale(1.05);
+    transform: scale(1.05); /* Scale up on hover */
     background-color: rgba(229, 231, 235, 1); /* Fully opaque on hover */
     box-shadow: 0 0 10px #1F2937; /* Teal glow */
 }
@@ -267,21 +270,23 @@ h2 {
 }
 
 .project:hover {
-    transform: scale(1.05);
+    transform: scale(1.05); /* Scale up on hover */
     background-color: rgba(229, 231, 235, 1); /* Fully opaque on hover */
     box-shadow: 0 0 10px #1F2937; /* Amber glow */
 }
+
 .project:active {
-    transform: scale(1.05);
-    background-color: rgba(229, 231, 235, 1); /* Fully opaque on hover */
+    transform: scale(1.05); /* Scale up on active state */
+    background-color: rgba(229, 231, 235, 1); /* Fully opaque on active */
     box-shadow: 0 0 10px #1F2937; /* Amber glow */
-    color: white;
+    color: white; /* Change text color on active */
 }
+
 .project h3 {
     margin-top: 0;
     color: #1F2937; /* Teal highlight */
     text-shadow: none; /* Remove text shadow for readability */
-    animation: textGlow 2s infinite alternate;
+    animation: textGlow 2s infinite alternate; /* Glow animation */
 }
 
 /* Blog Section */
@@ -292,7 +297,6 @@ h2 {
     margin-top: 20px;
     max-height: 80vh;
     overflow-y: auto;
-    padding-bottom: 20px; /* Ensure full visibility of content */
 }
 
 article {
@@ -359,6 +363,7 @@ a:hover {
     text-decoration-color: #1F2937;
     color: #1F2937;
 }
+
 a:active {
     text-decoration: underline;
     text-decoration-color: black;
@@ -366,6 +371,22 @@ a:active {
 }
 
 /* About Me Section Styles */
+.about-me-section {
+    padding: 20px;
+    text-align: center; /* Center the content */
+    margin-bottom: 20px;
+    background: rgba(229, 231, 235, 0.8); /* Lighter gray with transparency */
+    border: 1px solid #1F2937;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 900px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: #1F2937;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+}
+
 #about-me {
     background: rgba(229, 231, 235, 0.8); /* Lighter gray with transparency */
     border: 1px solid #1F2937;
@@ -479,3 +500,4 @@ header {
 #welcome-message.typing-done {
     border-right: none; /* Remove caret after typing */
 }
+
