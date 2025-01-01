@@ -34,15 +34,7 @@ body, html {
     section {
         width: 100%; /* Ensure sections take up full width */
         margin-bottom: 20px;
-    }
-
-    /* Adjust layout and padding for skills, projects, and bio sections on mobile devices */
-    .skills-container, .project, .bio {
-        display: grid; /* Ensure it uses grid layout */
-        grid-template-columns: 1fr;
-        margin: 10px auto;
-        padding: 15px;
-        overflow: hidden;
+        box-sizing: border-box; /* Include padding and border in element's total width and height */
     }
 
     /* Ensure the About Me section looks right */
@@ -50,9 +42,23 @@ body, html {
         padding: 20px;
         text-align: center;  /* Center the content */
         margin-bottom: 20px;
+        background: rgba(229, 231, 235, 0.8); /* Background color for better visibility */
+        border: 1px solid #1F2937; /* Border for better distinction */
+        border-radius: 10px; /* Rounded corners */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
     }
 
     /* Ensure the Skills section doesn't require horizontal scrolling */
+    #skills {
+        width: 100%;
+        padding: 20px;
+        background: rgba(243, 244, 246, 0.8); /* Background color for better visibility */
+        border: 1px solid #1F2937; /* Border for better distinction */
+        border-radius: 10px; /* Rounded corners */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+        overflow-x: hidden;
+    }
+
     .skills-container {
         display: flex;
         flex-direction: column; /* Stack skills vertically */
@@ -62,7 +68,6 @@ body, html {
         gap: 20px;
     }
 }
-
 
 
 
