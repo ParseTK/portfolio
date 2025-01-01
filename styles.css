@@ -13,6 +13,16 @@ body, html {
 /* Media queries for responsive design */
 /* Media queries for responsive design */
 @media (max-width: 599px) {
+    body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    overflow-y: auto;
+    min-height: 100%;
+    display: flex;
+    flex-direction: row;
+}
     nav ul {
         display: flex;
         flex-direction: column;
