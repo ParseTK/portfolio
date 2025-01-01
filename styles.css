@@ -16,6 +16,7 @@ body, html {
         height: 100%;
         margin: 0;
         padding: 0;
+        font-family: 'Montserrat', sans-serif; /* Ensure consistent font */
     }
 
     /* Adjust navigation layout for mobile devices */
@@ -23,65 +24,83 @@ body, html {
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding: 0;
     }
 
     /* Simplified single-column layout for main content on mobile devices */
     main.grid-container {
-        display: block;
-        width: 100%;
-        padding: 0;
-        box-sizing: border-box;
-    }
-
-    section {
-        width: 100%;
-        margin-bottom: 20px;
-        box-sizing: border-box;
-        padding: 20px;
-        background: rgba(243, 244, 246, 0.8);
-        border: 1px solid #1F2937;
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
-
-    /* Ensure the About Me section looks right */
-    #about-me {
-        padding: 20px;
-        text-align: center;
-        background: rgba(229, 231, 235, 0.8);
-        border: 1px solid #1F2937;
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
-
-    /* Ensure the Skills section looks right */
-    #skills {
-        padding: 20px;
-        background: rgba(243, 244, 246, 0.8);
-        border: 1px solid #1F2937;
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
-
-    .skills-container {
         display: flex;
         flex-direction: column;
         align-items: center;
         width: 100%;
-        gap: 20px;
+        padding: 0 10px; /* Add padding for better spacing */
+        box-sizing: border-box; /* Include padding in width */
+    }
+
+    section {
+        width: 100%; /* Ensure sections take up full width */
+        margin-bottom: 20px; /* Space between sections */
+        box-sizing: border-box; /* Include padding and border in element's total width and height */
+        padding: 20px;
+        background: #f9f9f9; /* Light background for readability */
+        border: 1px solid #ddd; /* Soft border for separation */
+        border-radius: 10px; /* Rounded corners */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    }
+
+    /* New design for the About Me section */
+    #about-me {
+        background: #fff; /* White background */
+        border: 1px solid #ddd; /* Soft border */
+        padding: 20px;
+        text-align: center;
+        margin-bottom: 20px;
+        color: #333; /* Dark text for readability */
+    }
+
+    .bio {
+        margin-bottom: 10px;
+        line-height: 1.5; /* Improved line height for readability */
+    }
+
+    .bio p {
+        margin-bottom: 10px;
+        text-align: justify; /* Justify text for better reading */
+    }
+
+    /* New design for the Skills section */
+    #skills {
+        background: #fff; /* White background */
+        border: 1px solid #ddd; /* Soft border */
+        padding: 20px;
+        color: #333; /* Dark text for readability */
+    }
+
+    .skills-container {
+        display: block; /* Ensure it acts as a block-level container */
+        width: 100%; /* Ensure full width */
     }
 
     .skill {
-        width: 100%;
-        text-align: center;
+        display: block; /* Ensure each skill item is block level */
+        width: 100%; /* Make sure each skill item takes full width */
+        text-align: left; /* Left align for better readability */
+        margin-bottom: 10px;
         padding: 10px;
-        background: rgba(255, 255, 255, 0.8);
-        border: 1px solid #1F2937;
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        background: #fafafa; /* Light background for skills */
+        border: 1px solid #ddd; /* Soft border for separation */
+        border-radius: 5px; /* Rounded corners */
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05); /* Light shadow for depth */
+    }
+
+    .skill h3 {
+        margin-top: 0;
+    }
+
+    .skill ul {
+        padding-left: 20px;
     }
 }
-
 
 /* Responsive images and videos to fit within their containers */
 img, video {
