@@ -29,9 +29,7 @@ body, html {
 
     /* Simplified single-column layout for main content on mobile devices */
     main.grid-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        display: block; /* Block layout for main container */
         width: 100%;
         padding: 0 10px; /* Add padding for better spacing */
         box-sizing: border-box; /* Include padding in width */
@@ -73,20 +71,20 @@ body, html {
     }
 
     .skills-container {
-        display: flex;
-        flex-direction: column;
-        align-items: stretch;
+        display: block; /* Ensure it acts as a block-level container */
         width: 100%; /* Ensure full width */
-        gap: 20px; /* Space between skill items */
     }
 
     .skill {
+        display: block; /* Ensure each skill item is block level */
+        width: 100%; /* Make sure each skill item takes full width */
+        text-align: left; /* Left align skill items */
+        margin-bottom: 10px;
         padding: 15px;
         background: #fff; /* White background for skills */
         border: 1px solid #ddd; /* Soft border for separation */
         border-radius: 10px; /* Rounded corners */
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
-        text-align: left; /* Left align skill items */
     }
 
     .skill h3 {
@@ -97,6 +95,7 @@ body, html {
         padding-left: 20px;
     }
 }
+
 
 
 /* Responsive images and videos to fit within their containers */
