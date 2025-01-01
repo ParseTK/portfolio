@@ -27,9 +27,7 @@ body, html {
 
     /* Set single-column layout for main content on mobile devices */
     main.grid-container {
-        display: flex; /* Use flexbox */
-        flex-direction: column; /* Stack items vertically */
-        align-items: center; /* Center align the content */
+        display: block; /* Block level container */
         width: 100%; /* Ensure full width */
         padding: 0 10px; /* Add padding for better spacing */
         box-sizing: border-box; /* Include padding in width */
@@ -40,37 +38,27 @@ body, html {
         margin-bottom: 20px;
         box-sizing: border-box; /* Include padding and border in element's total width and height */
         padding: 20px;
-        background: rgba(229, 231, 235, 0.8); /* Background color for better visibility */
+        background: rgba(243, 244, 246, 0.8); /* Light gray with transparency */
+        border: 1px solid #1F2937; /* Border for better distinction */
+        border-radius: 10px; /* Rounded corners */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
     }
 
     /* Ensure the About Me section looks right */
     #about-me {
-        padding: 20px;
         text-align: center;  /* Center the content */
-        margin-bottom: 20px;
-        background: rgba(229, 231, 235, 0.8); /* Background color for better visibility */
-        border: 1px solid #1F2937; /* Border for better distinction */
-        border-radius: 10px; /* Rounded corners */
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
     }
 
     /* Ensure the Skills section doesn't require horizontal scrolling */
-    #skills {
-        width: 100%;
-        padding: 20px;
-        background: rgba(243, 244, 246, 0.8); /* Background color for better visibility */
-        border: 1px solid #1F2937; /* Border for better distinction */
-        border-radius: 10px; /* Rounded corners */
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
-        overflow-x: hidden;
+    .skills-container {
+        display: block; /* Ensure it acts as a block-level container */
+        width: 100%; /* Ensure full width */
     }
 
-    .skills-container {
-        display: flex;
-        flex-direction: column; /* Stack skills vertically */
-        align-items: center; /* Center align the skills */
-        overflow-x: hidden;
-        gap: 20px; /* Space between items */
+    .skill {
+        display: block; /* Ensure each skill item is block level */
+        width: 100%; /* Make sure each skill item takes full width */
+        text-align: center; /* Center align skill items */
     }
 }
 
