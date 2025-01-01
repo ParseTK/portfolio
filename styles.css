@@ -27,9 +27,11 @@ body, html {
 
     /* Set single-column layout for main content on mobile devices */
     main.grid-container {
-        display: block; /* Ensure the main container is block-level */
+        display: flex; /* Use flexbox */
+        flex-direction: column; /* Stack items vertically */
+        align-items: stretch; /* Stretch items to fit container */
         width: 100%; /* Ensure full width */
-        padding: 0; /* Remove any additional padding */
+        padding: 0 10px; /* Add padding for better spacing */
         box-sizing: border-box; /* Include padding in width */
     }
 
@@ -46,7 +48,7 @@ body, html {
 
     /* Ensure the About Me section looks right */
     #about-me {
-        text-align: center;  /* Center the content */
+        text-align: center; /* Center the content */
     }
 
     /* Ensure the Skills section doesn't require horizontal scrolling */
@@ -61,7 +63,6 @@ body, html {
         text-align: center; /* Center align skill items */
     }
 }
-
 
 
 
