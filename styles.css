@@ -16,10 +16,9 @@ body, html {
         height: 100%;
         margin: 0;
         padding: 0;
-        font-family: 'Montserrat', sans-serif; /* Ensure consistent font */
+        font-family: 'Montserrat', sans-serif;
     }
 
-    /* Adjust navigation layout for mobile devices */
     nav ul {
         display: flex;
         flex-direction: column;
@@ -27,64 +26,61 @@ body, html {
         padding: 0;
     }
 
-    /* Simplified single-column layout for main content on mobile devices */
     main.grid-container {
-        display: block; /* Block layout for main container */
+        display: block;
         width: 100%;
-        padding: 0 10px; /* Add padding for better spacing */
-        box-sizing: border-box; /* Include padding in width */
+        padding: 0;
+        box-sizing: border-box;
     }
 
     section {
-        width: 100%; /* Ensure sections take up full width */
-        margin-bottom: 20px; /* Space between sections */
-        box-sizing: border-box; /* Include padding and border in element's total width and height */
+        width: 100%;
+        margin-bottom: 20px;
+        box-sizing: border-box;
         padding: 20px;
-        background: #fff; /* White background for readability */
-        border: 1px solid #ddd; /* Soft border for separation */
-        border-radius: 10px; /* Rounded corners */
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+        background: #fff;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
 
-    /* New design for the About Me section */
     #about-me {
-        background: #f9f9f9; /* Light gray background */
-        color: #333; /* Dark text for readability */
-        text-align: left; /* Left align the content */
+        background: #f9f9f9;
+        color: #333;
+        text-align: left;
     }
 
     .bio {
         margin-bottom: 10px;
-        line-height: 1.6; /* Improved line height for readability */
+        line-height: 1.6;
     }
 
     .bio p {
         margin-bottom: 10px;
-        text-align: left; /* Left align the text */
+        text-align: left;
     }
 
-    /* New design for the Skills section */
     #skills {
-        background: #f9f9f9; /* Light gray background */
-        color: #333; /* Dark text for readability */
-        text-align: left; /* Left align the content */
+        background: #f9f9f9;
+        color: #333;
+        text-align: left;
     }
 
     .skills-container {
-        display: block; /* Ensure it acts as a block-level container */
-        width: 100%; /* Ensure full width */
+        display: block;
+        width: 100%;
     }
 
     .skill {
-        display: block; /* Ensure each skill item is block level */
-        width: 100%; /* Make sure each skill item takes full width */
-        text-align: left; /* Left align skill items */
+        display: block;
+        width: 100%;
+        text-align: left;
         margin-bottom: 10px;
         padding: 15px;
-        background: #fff; /* White background for skills */
-        border: 1px solid #ddd; /* Soft border for separation */
-        border-radius: 10px; /* Rounded corners */
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+        background: #fff;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
 
     .skill h3 {
