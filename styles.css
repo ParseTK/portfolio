@@ -27,62 +27,60 @@ body, html {
     }
 
     main.grid-container {
-        display: flex;
-        flex-direction: column; /* Ensure sections stack vertically */
-        align-items: stretch; /* Stretch sections to full width */
+        display: block; /* Use block to ensure vertical stacking */
         width: 100%;
-        padding: 0 10px;
+        padding: 0;
         box-sizing: border-box;
     }
 
     section {
-        width: 100%;
+        width: 100%; /* Ensure sections take up full width */
         margin-bottom: 20px;
         box-sizing: border-box;
         padding: 20px;
-        background: #fff;
+        background: #fff; /* White background for readability */
         border: 1px solid #ddd;
         border-radius: 10px;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
 
     #about-me {
-        background: #f9f9f9;
-        color: #333;
-        text-align: left;
+        background: #f9f9f9; /* Light gray background */
+        color: #333; /* Dark text for readability */
+        text-align: left; /* Left align the content */
     }
 
     .bio {
         margin-bottom: 10px;
-        line-height: 1.6;
+        line-height: 1.6; /* Improved line height for readability */
     }
 
     .bio p {
         margin-bottom: 10px;
-        text-align: left;
+        text-align: left; /* Left align the text */
     }
 
     #skills {
-        background: #f9f9f9;
-        color: #333;
-        text-align: left;
+        background: #f9f9f9; /* Light gray background */
+        color: #333; /* Dark text for readability */
+        text-align: left; /* Left align the content */
     }
 
     .skills-container {
-        display: block;
-        width: 100%;
+        display: block; /* Ensure it acts as a block-level container */
+        width: 100%; /* Ensure full width */
     }
 
     .skill {
-        display: block;
-        width: 100%;
-        text-align: left;
+        display: block; /* Ensure each skill item is block level */
+        width: 100%; /* Make sure each skill item takes full width */
+        text-align: left; /* Left align skill items */
         margin-bottom: 10px;
         padding: 15px;
-        background: #fff;
-        border: 1px solid #ddd;
-        border-radius: 10px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        background: #fff; /* White background for skills */
+        border: 1px solid #ddd; /* Soft border for separation */
+        border-radius: 10px; /* Rounded corners */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
     }
 
     .skill h3 {
@@ -93,8 +91,6 @@ body, html {
         padding-left: 20px;
     }
 }
-
-
 
 /* Responsive images and videos to fit within their containers */
 img, video {
