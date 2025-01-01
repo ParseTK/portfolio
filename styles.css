@@ -27,15 +27,15 @@ body, html {
 
     /* Set single-column layout for main content on mobile devices */
     main.grid-container {
-        display: block; /* Block level container */
+        display: block; /* Ensure the main container is block-level */
         width: 100%; /* Ensure full width */
-        padding: 0 10px; /* Add padding for better spacing */
+        padding: 0; /* Remove any additional padding */
         box-sizing: border-box; /* Include padding in width */
     }
 
     section {
         width: 100%; /* Ensure sections take up full width */
-        margin-bottom: 20px;
+        margin-bottom: 20px; /* Space between sections */
         box-sizing: border-box; /* Include padding and border in element's total width and height */
         padding: 20px;
         background: rgba(243, 244, 246, 0.8); /* Light gray with transparency */
