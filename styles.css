@@ -39,6 +39,8 @@ body, html {
         width: 100%; /* Ensure sections take up full width */
         margin-bottom: 20px;
         box-sizing: border-box; /* Include padding and border in element's total width and height */
+        padding: 20px;
+        background: rgba(229, 231, 235, 0.8); /* Background color for better visibility */
     }
 
     /* Ensure the About Me section looks right */
@@ -68,7 +70,6 @@ body, html {
         flex-direction: column; /* Stack skills vertically */
         align-items: center; /* Center align the skills */
         overflow-x: hidden;
-        padding-bottom: 20px;
         gap: 20px; /* Space between items */
     }
 }
