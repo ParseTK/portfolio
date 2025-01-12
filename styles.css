@@ -21,8 +21,7 @@ body, html {
         overflow: hidden;
         overflow-y: auto;
         min-height: 100%;
-        display: flex;
-        flex-direction: column;
+        display: block;
     }
 
     /* Ensure content fits within the mobile viewport */
@@ -38,8 +37,7 @@ body, html {
     }
 
     nav ul {
-        display: flex;
-        flex-direction: column;
+        display: block;
         align-items: center;
     }
 
@@ -55,8 +53,7 @@ body, html {
 
     /* Main Content Styles */
     main.grid-container {
-        display: flex;
-        flex-direction: column;
+        display: block;
         align-items: center;
         padding: 10px;
     }
