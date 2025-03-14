@@ -1,39 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Me</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <div class="video-background">
-        <video autoplay muted loop id="bg-video">
-            <source src="vecteezy_binary-code-with-numbers-moving-downward-on-screen_2015336.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-    </div>
+  <div class="content-overlay">
     <header>
-        <h1></h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+      <h1 id="welcome-message">Contact Me</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
     </header>
-    <main>
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Email: <a href="mailto:kirchnertyler321@gmail.com">kirchnertyler321@gmail.com</a></p>
-            <p>GitHub: <a href="https://github.com/ParseTK">ParseTK</a></p>
-            <p>LinkedIn: <a href="www.linkedin.com/in/parsetk">ParseTK</a></p>
-        </section>
+    <main class="grid-container">
+      <section id="contact" class="content-section">
+        <h2>Get In Touch</h2>
+        <p>If you'd like to collaborate or have any inquiries, feel free to reach out!</p>
+        <form action="#" method="POST" class="contact-form">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <button type="submit" class="btn-submit">Send Message</button>
+        </form>
+        <div class="contact-info">
+          <p><i class="fas fa-envelope"></i> Email: 22parse22@gmail.com</p>
+        </div>
+      </section>
     </main>
-    <footer>
-        <p>&copy; 2024</p>
-    </footer>
+<footer>
+    <p>&copy; 2024 Tyler James</p>
+    <div class="social-media">
+        <a href="https://www.linkedin.com/in/parsetk" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/ParseTK" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://twitter.com/yourprofile" target="_blank"><i class="fab fa-twitter"></i></a>
+    </div>
+</footer>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
