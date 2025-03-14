@@ -1,16 +1,23 @@
 document.addEventListener('DOMContentLoaded', () => {
-    console.log("Professional Portfolio Loaded");
+    console.log("Website Loaded Successfully");
 
-    // Add smooth scrolling to navigation links
+    // Header scroll effect
+    const header = document.querySelector('header');
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 100) {
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
+        }
+    });
+
+    // Smooth scrolling for navigation
     document.querySelectorAll('nav a').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
+        anchor.addEventListener('click', function (e) {
             e.preventDefault();
-
             const targetId = this.getAttribute('href');
-            const targetElement = document.querySelector(targetId);
-
-            if (targetElement) {
-                targetElement.scrollIntoView({
+            if (targetId.startsWith("#")) {
+                document.querySelector(targetId).scrollIntoView({
                     behavior: 'smooth'
                 });
             } else {
@@ -19,36 +26,27 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Dynamic Welcome Message for Homepage
+    // Dynamic welcome message
     const welcomeMessageElement = document.getElementById('welcome-message');
     if (welcomeMessageElement) {
         const now = new Date();
         const hours = now.getHours();
-        let welcomeMessage = '';
-
-        if (hours < 12) {
-            welcomeMessage = 'Good Morning!';
-        } else if (hours < 18) {
-            welcomeMessage = 'Good Afternoon!';
-        } else {
-            welcomeMessage = 'Good Evening!';
-        }
-
-        welcomeMessageElement.textContent = welcomeMessage;
-
-        // Add class to remove caret after typing effect
-        setTimeout(() => {
-            welcomeMessageElement.classList.add('typing-done');
-        }, 1000); // Adjust to match typing animation duration
+        let greeting = "Welcome to My Portfolio";
+        if (hours < 12) greeting = "Good Morning! Welcome to My Portfolio";
+        else if (hours < 18) greeting = "Good Afternoon! Welcome to My Portfolio";
+        else greeting = "Good Evening! Welcome to My Portfolio";
+        welcomeMessageElement.textContent = greeting;
     }
-});
-window.addEventListener('resize', () => {
-    const bgVideo = document.getElementById('bg-video');
-    if (window.innerWidth / window.innerHeight < bgVideo.videoWidth / bgVideo.videoHeight) {
-        bgVideo.style.width = '100%';
-        bgVideo.style.height = 'auto';
-    } else {
-        bgVideo.style.width = 'auto';
-        bgVideo.style.height = '100%';
-    }
+
+    // Hover effects for projects/skills
+    document.querySelectorAll('.project, .skill').forEach(item => {
+        item.addEventListener('mouseenter', () => item.classList.add('hovered'));
+        item.addEventListener('mouseleave', () => item.classList.remove('hovered'));
+    });
+
+    // Button click animation
+    document.querySelectorAll('nav a, .read-more, button').forEach(button => {
+        button.addEventListener('mousedown', () => button.classList.add('button-clicked'));
+        button.addEventListener('mouseup', () => setTimeout(() => button.classList.remove('button-clicked'), 150));
+    });
 });
