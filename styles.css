@@ -357,26 +357,30 @@ footer a:hover {
 @media (max-width: 768px) {
     /* Header adjustments */
     header {
+        position: static !important;
         padding: 15px 10px;
     }
 
-    nav li {
-        margin: 0 10px;
+    /* Reset scrolled state styles */
+    header.scrolled {
+        position: static !important;
+        padding: 15px 10px !important;
+        background: rgba(255, 255, 255, 0.1);
+        border-bottom: 2px solid #4b5563;
     }
 
-    nav a {
-        padding: 10px 12px;
-        font-size: 0.9rem;
+    header.scrolled nav {
+        top: 0 !important;
     }
 
     /* Main content spacing */
     main {
-        padding-top: 80px;
+        padding-top: 20px !important;
     }
 
     /* Content section adjustments */
     .content-section {
-        margin: 60px auto 20px;
+        margin: 30px auto 20px;
         padding: 25px 15px;
         width: 95%;
     }
@@ -395,7 +399,17 @@ footer a:hover {
         padding: 20px;
     }
 
-    /* Hide welcome message on mobile when scrolled */
+    /* Navigation items */
+    nav li {
+        margin: 0 10px;
+    }
+
+    nav a {
+        padding: 10px 12px;
+        font-size: 0.9rem;
+    }
+
+    /* Hide welcome message */
     header.scrolled #welcome-message {
         display: none;
     }
@@ -419,11 +433,11 @@ footer a:hover {
     }
 
     main {
-        padding-top: 70px;
+        padding-top: 15px !important;
     }
 
     .content-section {
-        margin: 50px auto 15px;
+        margin: 25px auto 15px;
         padding: 20px 10px;
     }
 
