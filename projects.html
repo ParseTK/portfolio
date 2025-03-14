@@ -1,15 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- === METADATA === -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Projects</title>
+
+  <!-- === STYLES & FONTS === -->
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
+
 <body>
+  <!-- ██████ PAGE CONTAINER ██████ -->
   <div class="content-overlay">
+
+    <!-- 〓〓〓 HEADER & NAVIGATION 〓〓〓 -->
     <header>
       <h1 id="welcome-message">My Projects</h1>
       <nav>
@@ -21,42 +28,80 @@
         </ul>
       </nav>
     </header>
+
+    <!-- ✧✧✧ MAIN CONTENT ✧✧✧ -->
     <main class="grid-container">
+
+      <!-- ༺ PROJECTS SECTION ༻ -->
       <section id="projects" class="content-section">
         <h2>My Work</h2>
+
+        <!-- ༄ PROJECTS CONTAINER ༄ -->
         <div class="projects-container">
-          <div class="project">
-            <h3><i class="fas fa-cloud-sun"></i> PlaceHolder</h3>
-            <p>PlaceHolder</p>
-          </div>
-          <div class="project">
-            <h3><i class="fas fa-tasks"></i> Expense Tracker</h3>
-            <p>PlaceHolder</p>
-          </div>
-          <div class="project">
-            <h3><i class="fas fa-home"></i> Real Estate Analyzer</h3>
-            <p>A tool for property valuation and analytics.</p>
-          </div>
-          <div class="project">
-            <h3><i class="fas fa-paint-roller"></i> Paint Job Estimator</h3>
-            <p>A calculator for estimating painting costs.</p>
-          </div>
-          <div class="project">
-            <h3><i class="fas fa-hand-rock"></i> Rock Paper Scissors Game</h3>
-            <p>A simple interactive game with an AI opponent.</p>
-          </div>
+
+          <!-- ❂ PROJECT 1 ❂ -->
+          <a href="https://github.com/ParseTK/pythonProjects/blob/main/Grade_Analyzer.py" class="project-link">
+            <div class="project">
+              <h3><i class="fa fa-graduation-cap"></i> Grade Analyzer</h3>
+              <p>This program is ideal for students or educators who want to analyze test results efficiently</p>
+            </div>
+          </a>
+
+          <!-- ❂ PROJECT 2 ❂ -->
+          <a href="https://github.com/ParseTK/JS_practice/blob/main/JS_teamStats.js" class="project-link">
+            <div class="project">
+              <h3><i class="fas fa-tasks"></i> Team Stats</h3>
+              <p>This program creates and manages a Team Object that tracks information about team players and games</p>
+            </div>
+          </a>
+
+          <!-- ❂ PROJECT 3 ❂ -->
+          <a href="https://github.com/ParseTK/pythonProjects/blob/main/RE-Analyzer.py" class="project-link">
+            <div class="project">
+              <h3><i class="fas fa-home"></i> Real Estate Analyzer</h3>
+              <p>This program can be particularly useful for real estate professionals or anyone needing to analyze a collection of property sales data!</p>
+            </div>
+          </a>
+
+          <!-- ❂ PROJECT 4 ❂ -->
+          <a href="https://github.com/ParseTK/pythonProjects/blob/main/Paint%20Job.py" class="project-link">
+            <div class="project">
+              <h3><i class="fas fa-paint-roller"></i> Paint Job Estimator</h3>
+              <p>Perfect for contractors or businesses offering painting services, enabling them to quickly and accurately generate cost estimates</p>
+            </div>
+          </a>
+
+          <!-- ❂ PROJECT 5 ❂ -->
+          <a href="https://github.com/ParseTK/pythonProjects/blob/main/Paint%20Job.py" class="project-link">
+            <div class="project">
+              <h3><i class="fa fa-credit-card"></i> Loan Approval</h3>
+              <p>Ideal for businesses seeking efficient pre-qualification solutions, user friendly and precise financial logic.</p>
+            </div>
+          </a>
+
+          <!-- ❂ PROJECT 6 ❂ -->
+          <a href="https://github.com/ParseTK/JS_practice/blob/main/JS_rockPaperScissors.js" class="project-link">
+            <div class="project">
+              <h3><i class="fas fa-hand-rock"></i> Rock Paper Scissors Game</h3>
+              <p>This program is a great example of interactivity and randomness, making it fun for users to test their luck and strategy.</p>
+            </div>
+          </a>
         </div>
       </section>
     </main>
-<footer>
-    <p>&copy; 2024 Tyler James</p>
-    <div class="social-media">
+
+    <!-- ✾✾✾ FOOTER ✾✾✾ -->
+    <footer>
+      <p>&copy; 2024 Tyler James</p>
+      <div class="social-media">
         <a href="https://www.linkedin.com/in/parsetk" target="_blank"><i class="fab fa-linkedin"></i></a>
         <a href="https://github.com/ParseTK" target="_blank"><i class="fab fa-github"></i></a>
         <a href="https://twitter.com/yourprofile" target="_blank"><i class="fab fa-twitter"></i></a>
-    </div>
-</footer>
+      </div>
+    </footer>
   </div>
+
+  <!-- === SCRIPTS === -->
   <script src="script.js"></script>
 </body>
 </html>
