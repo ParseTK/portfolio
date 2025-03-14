@@ -1,49 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog - Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <div class="video-background">
-        <video autoplay muted loop id="bg-video">
-            <source src="vecteezy_binary-code-with-numbers-moving-downward-on-screen_2015336.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-    </div>
+  <div class="content-overlay">
     <header>
-        <h1></h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+      <h1 id="welcome-message">My Blog</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
     </header>
-    <main>
-        <section id="blog">
-            <h2>Blog</h2>
-            <article>
-                <h3>Title</h3>
-                <p>Published on: <time datetime="2024-12-31">Date</time></p>
-                <p>Hook</p>
-                <a href="#" class="read-more">Read More</a>
-            </article>
-            <article>
-                <h3>Title</h3>
-                <p>Published on: <time datetime="2024-11-30">date</time></p>
-                <p>Hook</p>
-                <a href="#" class="read-more">Read More</a>
-            </article>
-        </section>
+    <main class="grid-container">
+      <section id="blog" class="content-section">
+        <h2>Latest Posts</h2>
+        <div class="blog-container">
+          <article class="blog-post">
+            <h3><i class="fas fa-code"></i> PlaceHolder</h3>
+            <p>PlaceHolder</p>
+            <a href="#" class="read-more">Read More</a>
+          </article>
+          <article class="blog-post">
+            <h3><i class="fas fa-lightbulb"></i> PlaceHolder</h3>
+            <p>PlaceHolder</p>
+            <a href="#" class="read-more">Read More</a>
+          </article>
+          <article class="blog-post">
+            <h3><i class="fas fa-laptop-code"></i>PlaceHolder</h3>
+            <p>PlaceHolder</p>
+            <a href="#" class="read-more">Read More</a>
+          </article>
+        </div>
+      </section>
     </main>
-    <footer>
-        <p>&copy; Tyler James 2024</p>
-    </footer>
-    <script src="script.js"></script>
+<footer>
+    <p>&copy; 2024 Tyler James</p>
+    <div class="social-media">
+        <a href="https://www.linkedin.com/in/parsetk" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/ParseTK" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://twitter.com/yourprofile" target="_blank"><i class="fab fa-twitter"></i></a>
+    </div>
+</footer>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
