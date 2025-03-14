@@ -309,28 +309,99 @@ footer a:hover {
 }
 
 /* =====================================================================
-   Responsive Design
+   Mobile Responsiveness Enhancements
 ===================================================================== */
 @media (max-width: 768px) {
-    nav li {
-        display: block;
-        margin: 10px 0;
+    /* Adjust header for mobile */
+    header {
+        padding: 15px 10px;
+        position: fixed;
     }
 
+    /* Mobile navigation adjustments */
+    nav li {
+        margin: 8px 0;
+    }
+
+    nav a {
+        padding: 10px 15px;
+        font-size: 0.9rem;
+    }
+
+    /* Main content spacing */
+    main {
+        padding-top: 80px; /* Reduced from 100px */
+    }
+
+    /* Content section adjustments */
     .content-section {
-        margin: 100px auto 20px;
-        padding: 30px 15px;
+        margin: 60px auto 20px;
+        padding: 25px 15px;
+    }
+
+    /* Smaller headings */
+    h1 {
+        font-size: 1.8rem !important;
+        margin: 0.5em 0;
     }
 
     h2 {
-        font-size: 2rem;
+        font-size: 1.5rem !important;
     }
 
-    .skills-container, .projects-container, .blog-container {
-        grid-template-columns: 1fr;
+    /* Compact project/skill cards */
+    .skills-container, 
+    .projects-container, 
+    .blog-container {
+        gap: 15px;
+    }
+
+    .skill, 
+    .project, 
+    .blog-post {
+        padding: 15px;
+    }
+
+    /* Hide welcome message on mobile when scrolled */
+    header.scrolled #welcome-message {
+        display: none;
+    }
+
+    /* Better form handling */
+    .contact-form input, 
+    .contact-form textarea {
+        font-size: 0.9rem;
     }
 }
 
+@media (max-width: 480px) {
+    /* Ultra-mobile adjustments */
+    header {
+        padding: 12px 8px;
+    }
+
+    nav a {
+        padding: 8px 12px;
+        font-size: 0.8rem;
+    }
+
+    main {
+        padding-top: 70px;
+    }
+
+    .content-section {
+        margin: 50px auto 15px;
+        padding: 20px 10px;
+    }
+
+    h1 {
+        font-size: 1.6rem !important;
+    }
+
+    h2 {
+        font-size: 1.3rem !important;
+    }
+}
 /* =====================================================================
    Accessibility Improvements
 ===================================================================== */
