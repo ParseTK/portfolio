@@ -1,15 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- === METADATA === -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio</title>
+
+  <!-- === STYLES & FONTS === -->
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
+
 <body>
+  <!-- ██████ PAGE CONTAINER ██████ -->
   <div class="content-overlay">
+
+    <!-- 〓〓〓 HEADER & NAVIGATION 〓〓〓 -->
     <header>
       <h1 id="welcome-message">Welcome to my Portfolio</h1>
       <nav>
@@ -21,29 +28,31 @@
         </ul>
       </nav>
     </header>
+
+    <!-- ✧✧✧ MAIN CONTENT ✧✧✧ -->
     <main class="grid-container">
+
+      <!-- ༺ ABOUT ME SECTION ༻ -->
       <section id="about-me" class="content-section">
-          <h2>About Me</h2>
-          <p>
-              I am a passionate and dedicated professional with a strong background in web development and software engineering.
-              My expertise lies in crafting responsive, user-friendly websites and applications that deliver seamless experiences.
-              With a keen eye for design and a problem-solving mindset, I strive to create innovative solutions that meet the needs of users.
-          </p>
-          <p>
-              Over the years, I have honed my skills in HTML, CSS, JavaScript, and various modern frameworks.
-              My goal is to continuously learn and adapt to emerging technologies, ensuring that my work remains cutting-edge and efficient.
-          </p>
-          <p>
-              When I’m not coding, I enjoy exploring new tech trends, contributing to open-source projects, and collaborating with other developers to bring creative ideas to life.
-          </p>
+        <h2>About Me</h2>
+        <!-- ༄ Biography Paragraphs ༄ -->
+        <p>I'm a passionate developer with a knack for turning complex problems into elegant, user-friendly solutions. My journey in tech started with a curiosity for how things work, and it's grown into a career where I get to build tools and applications that make a real difference. Whether it's crafting responsive websites, optimizing databases, or automating workflows, I thrive on creating solutions that are as efficient as they are intuitive.</p>
+        <p>With expertise in Python, Java, and web development (HTML, CSS, JavaScript), I bring a versatile skill set to every project. I'm equally comfortable working on the front-end, where I focus on clean, modern designs, and the back-end, where I ensure robust, scalable systems. My experience with cloud platforms like AWS and Azure, combined with my database management skills, allows me to tackle projects from start to finish.</p>
+        <p>Beyond coding, I'm a problem-solver at heart. I enjoy breaking down challenges, collaborating with teams, and finding creative ways to deliver results. When I'm not at my desk, you'll find me exploring new tech trends, contributing to open-source projects, or tinkering with personal projects that push my skills further.</p>
+        <p>I believe in continuous learning and staying ahead of the curve in this fast-paced industry. Let's build something amazing together!</p>
       </section>
 
-      <div class="section-divider"></div>  <!-- Orange divider -->
+      <!-- ✧ ORANGE DIVIDER ✧ -->
+      <div class="section-divider"></div>
 
+      <!-- ༺ SKILLS SECTION ༻ -->
       <section id="skills" class="content-section">
         <h2>Skills</h2>
+
+        <!-- ༄ SKILLS CONTAINER ༄ -->
         <div class="skills-container">
-          <!-- Programming Languages -->
+
+          <!-- ✦ SKILL CARD 1 ✦ -->
           <div class="skill">
             <h3><i class="fas fa-code"></i> Programming Languages</h3>
             <ul>
@@ -55,7 +64,7 @@
             </ul>
           </div>
 
-          <!-- Web Development -->
+          <!-- ✦ SKILL CARD 2 ✦ -->
           <div class="skill">
             <h3><i class="fas fa-laptop-code"></i> Web Development</h3>
             <ul>
@@ -65,7 +74,7 @@
             </ul>
           </div>
 
-          <!-- Database Management -->
+          <!-- ✦ SKILL CARD 3 ✦ -->
           <div class="skill">
             <h3><i class="fas fa-database"></i> Database Management</h3>
             <ul>
@@ -76,38 +85,35 @@
             </ul>
           </div>
 
-          <!-- Cloud Platforms & DevOps -->
+          <!-- ✦ SKILL CARD 4 ✦ -->
           <div class="skill">
             <h3><i class="fas fa-cloud"></i> Cloud Platforms & DevOps</h3>
             <ul>
               <li>AWS (Amazon Web Services)</li>
               <li>Azure (Microsoft Azure)</li>
-              <!-- Add Docker/Kubernetes if applicable -->
             </ul>
           </div>
 
-          <!-- Version Control & Collaboration -->
+          <!-- ✦ SKILL CARD 5 ✦ -->
           <div class="skill">
             <h3><i class="fas fa-code-branch"></i> Version Control & Collaboration</h3>
             <ul>
               <li>Git</li>
               <li>GitHub</li>
-              <!-- Add GitLab/Bitbucket if applicable -->
             </ul>
           </div>
 
-          <!-- Operating Systems & Tools -->
+          <!-- ✦ SKILL CARD 6 ✦ -->
           <div class="skill">
             <h3><i class="fas fa-terminal"></i> Operating Systems & Tools</h3>
             <ul>
               <li><i class="fab fa-linux"></i> Linux</li>
               <li><i class="fas fa-terminal"></i> Vim</li>
               <li><i class="fas fa-terminal"></i> Bash/Shell Scripting</li>
-              <!-- Add other command-line tools if applicable -->
             </ul>
           </div>
 
-          <!-- Tools & Other Skills -->
+          <!-- ✦ SKILL CARD 7 ✦ -->
           <div class="skill">
             <h3><i class="fas fa-tools"></i> Tools & Other Skills</h3>
             <ul>
@@ -118,6 +124,8 @@
         </div>
       </section>
     </main>
+
+    <!-- ✾✾✾ FOOTER ✾✾✾ -->
     <footer>
       <p>&copy; 2024 Tyler James</p>
       <div class="social-media">
@@ -127,6 +135,8 @@
       </div>
     </footer>
   </div>
+
+  <!-- === SCRIPTS === -->
   <script src="script.js"></script>
 </body>
 </html>
