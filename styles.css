@@ -3,6 +3,7 @@
 ===================================================================== */
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body {
@@ -17,6 +18,7 @@ body {
     min-height: 100vh;
     line-height: 1.8;
     font-size: 16px;
+    overflow-x: hidden;
 }
 
 /* =====================================================================
@@ -42,7 +44,7 @@ header.scrolled {
     border-bottom: none;
     box-shadow: none;
     backdrop-filter: none;
-    padding: 8px 20px; /* Further reduced vertical padding */
+    padding: 8px 20px;
 }
 
 header.scrolled #welcome-message {
@@ -55,15 +57,15 @@ header.scrolled #welcome-message {
 /* Adjusted nav positioning */
 header.scrolled nav {
     position: relative;
-    top: -50px; /* Increased upward movement */
+    top: -50px;
 }
 
 /* Scrolled state navigation buttons */
 header.scrolled nav a {
     background: rgba(255, 255, 255, 0.2);
     border: 1px solid rgba(255, 255, 255, 0.3);
-    padding: 10px 15px; /* Reduced button padding */
-    font-size: 0.9rem; /* Slightly smaller font */
+    padding: 10px 15px;
+    font-size: 0.9rem;
 }
 
 nav ul {
@@ -97,11 +99,14 @@ nav a:hover {
     transform: scale(1.1);
     box-shadow: 0 4px 10px rgba(255, 165, 0, 0.5);
 }
+
 /* =====================================================================
    Main Content
 ===================================================================== */
 main {
     padding-top: 100px;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 /* =====================================================================
@@ -116,6 +121,7 @@ main {
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
     text-align: center;
     backdrop-filter: blur(12px);
+    width: 90%;
 }
 
 /* Add extra top margin to the first section */
@@ -128,10 +134,12 @@ main > .content-section:first-child {
 ===================================================================== */
 .skills-container, .projects-container, .blog-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 30px;
     margin: 20px 0;
     padding: 0 20px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .skill, .project, .blog-post {
@@ -143,6 +151,8 @@ main > .content-section:first-child {
     transition: all 0.3s ease;
     text-align: left;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .skill:hover, .project:hover, .blog-post:hover {
@@ -150,6 +160,23 @@ main > .content-section:first-child {
     background-color: rgba(255, 255, 255, 0.25);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
     border: 1px solid rgba(255, 165, 0, 0.8);
+}
+
+.project-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.project-link:hover .project {
+    transform: translateY(-7px);
+    background-color: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+    border: 1px solid rgba(255, 165, 0, 0.8);
+}
+
+.project-link:hover h3 {
+    color: #ffffff;
 }
 
 /* =====================================================================
@@ -204,23 +231,39 @@ main > .content-section:first-child {
 }
 
 /* =====================================================================
-   Gradient Buttons
+   Buttons (Improved Read More Style)
 ===================================================================== */
 .btn-submit, .read-more {
-    background: linear-gradient(135deg, #ffa500, #ff6347);
+    background: rgba(255, 255, 255, 0.1);
     color: #ffffff;
-    border: none;
-    padding: 12px 24px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 10px 20px;
     border-radius: 6px;
     font-size: 1rem;
     font-weight: 600;
     cursor: pointer;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(5px);
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 15px;
 }
 
 .btn-submit:hover, .read-more:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 6px 12px rgba(255, 165, 0, 0.4);
+    background: rgba(255, 165, 0, 0.2);
+    color: #ffffff;
+    border-color: #ffa500;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(255, 165, 0, 0.2);
+}
+
+.read-more {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 165, 0, 0.3);
+}
+
+.read-more:hover {
+    background: rgba(255, 165, 0, 0.15);
 }
 
 /* =====================================================================
@@ -312,54 +355,44 @@ footer a:hover {
    Mobile Responsiveness Enhancements
 ===================================================================== */
 @media (max-width: 768px) {
-    /* Adjust header for mobile */
+    /* Header adjustments */
     header {
         padding: 15px 10px;
-        position: fixed;
     }
 
-    /* Mobile navigation adjustments */
     nav li {
-        margin: 8px 0;
+        margin: 0 10px;
     }
 
     nav a {
-        padding: 10px 15px;
+        padding: 10px 12px;
         font-size: 0.9rem;
     }
 
     /* Main content spacing */
     main {
-        padding-top: 80px; /* Reduced from 100px */
+        padding-top: 80px;
     }
 
     /* Content section adjustments */
     .content-section {
         margin: 60px auto 20px;
         padding: 25px 15px;
+        width: 95%;
     }
 
-    /* Smaller headings */
-    h1 {
-        font-size: 1.8rem !important;
-        margin: 0.5em 0;
-    }
-
-    h2 {
-        font-size: 1.5rem !important;
-    }
-
-    /* Compact project/skill cards */
-    .skills-container, 
-    .projects-container, 
+    /* Grid layout adjustments */
+    .skills-container,
+    .projects-container,
     .blog-container {
-        gap: 15px;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 0 10px;
     }
 
-    .skill, 
-    .project, 
-    .blog-post {
-        padding: 15px;
+    /* Card adjustments */
+    .skill, .project, .blog-post {
+        padding: 20px;
     }
 
     /* Hide welcome message on mobile when scrolled */
@@ -367,8 +400,8 @@ footer a:hover {
         display: none;
     }
 
-    /* Better form handling */
-    .contact-form input, 
+    /* Form adjustments */
+    .contact-form input,
     .contact-form textarea {
         font-size: 0.9rem;
     }
@@ -381,7 +414,7 @@ footer a:hover {
     }
 
     nav a {
-        padding: 8px 12px;
+        padding: 8px 10px;
         font-size: 0.8rem;
     }
 
@@ -402,6 +435,7 @@ footer a:hover {
         font-size: 1.3rem !important;
     }
 }
+
 /* =====================================================================
    Accessibility Improvements
 ===================================================================== */
