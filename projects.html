@@ -1,51 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects - Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Projects</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <div class="video-background">
-        <video autoplay muted loop id="bg-video">
-            <source src="vecteezy_binary-code-with-numbers-moving-downward-on-screen_2015336.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-    </div>
+  <div class="content-overlay">
     <header>
-        <h1 id="welcome-message"></h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+      <h1 id="welcome-message">My Projects</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
     </header>
-    <main>
-        <section id="projects">
-            <h2>Projects</h2>
-            <div class="project">
-                <h3><a  href="https://github.com/ParseTK/pythonProjects/blob/main/RE-Analyzer.py">Real-Estate Analyzer</a></h3>
-                <p>Collects property sales values from the user, processes this data to calculate statistical metrics
-                    (such as minimum, maximum, total, average, median, and commission), and outputs these results - Python</p>
-            </div>
-            <div class="project">
-                <h3><a  href="https://github.com/ParseTK/pythonProjects/blob/main/Paint%20Job.py">Paint Job Estimate</a></h3>
-                <p>Calculates the total cost of a paint job, including paint and labor costs, tax, and then generates a detailed cost estimate for the customer,
-                    while also saving the output to a text file. - Python</p>
-            </div>
-            <div class="project">
-                <h3><a  href="https://github.com/ParseTK/JS_practice/blob/main/JS_rockPaperScissors.txt">Rock, Paper, Scissors</a></h3>
-                <p>Simple rock, paper, scissors game. - JavaScript</p>
-            </div>
-        </section>
+    <main class="grid-container">
+      <section id="projects" class="content-section">
+        <h2>My Work</h2>
+        <div class="projects-container">
+          <div class="project">
+            <h3><i class="fas fa-cloud-sun"></i> PlaceHolder</h3>
+            <p>PlaceHolder</p>
+          </div>
+          <div class="project">
+            <h3><i class="fas fa-tasks"></i> Expense Tracker</h3>
+            <p>PlaceHolder</p>
+          </div>
+          <div class="project">
+            <h3><i class="fas fa-home"></i> Real Estate Analyzer</h3>
+            <p>A tool for property valuation and analytics.</p>
+          </div>
+          <div class="project">
+            <h3><i class="fas fa-paint-roller"></i> Paint Job Estimator</h3>
+            <p>A calculator for estimating painting costs.</p>
+          </div>
+          <div class="project">
+            <h3><i class="fas fa-hand-rock"></i> Rock Paper Scissors Game</h3>
+            <p>A simple interactive game with an AI opponent.</p>
+          </div>
+        </div>
+      </section>
     </main>
-    <footer>
-        <p>&copy; 2024</p>
-    </footer>
-    <script src="script.js"></script>
+<footer>
+    <p>&copy; 2024 Tyler James</p>
+    <div class="social-media">
+        <a href="https://www.linkedin.com/in/parsetk" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/ParseTK" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://twitter.com/yourprofile" target="_blank"><i class="fab fa-twitter"></i></a>
+    </div>
+</footer>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
