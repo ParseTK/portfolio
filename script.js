@@ -32,9 +32,9 @@ document.addEventListener('DOMContentLoaded', () => {
         const now = new Date();
         const hours = now.getHours();
         let greeting = "Welcome to My Portfolio";
-        if (hours < 12) greeting = "Good Morning! Welcome to My Portfolio";
-        else if (hours < 18) greeting = "Good Afternoon! Welcome to My Portfolio";
-        else greeting = "Good Evening! Welcome to My Portfolio";
+        if (hours < 12) greeting = "Good Morning!";
+        else if (hours < 18) greeting = "Good Afternoon!";
+        else greeting = "Good Evening!";
         welcomeMessageElement.textContent = greeting;
     }
 
